@@ -14,15 +14,15 @@ function HangMan({ step }) {
     function handleError(step) {
         if (step >= images.length - 1) {
             return (
-                <p className='text-red-500'>Game Over! You lost the game.</p>
+                <p className='text-red-500 text-2xl'>Game Over! You lost the game.</p>
             )
         }
     }
 
     return (
         <>
-            <div className='w-[300px] h-[300px]'>
-                <img src={step >= images.length ? images[images.length - 1] : images[step]}></img>
+            <div className='w-[300px] h-[300px] text-center'>
+                <img src={step >= images.length ? images[images.length - 1] : images[step]} ></img>
                 {handleError(step)}
             </div>
 

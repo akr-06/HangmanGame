@@ -18,7 +18,7 @@ function PlayGame() {
 
     return (
         <>
-            <div>
+            <div className="text-center text-2xl">
                 <h1>Play Game</h1>
                 <p>Every wrong guess will ultimately lead to hanging a man.</p>
                 <div>
