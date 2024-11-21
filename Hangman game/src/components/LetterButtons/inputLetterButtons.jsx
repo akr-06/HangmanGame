@@ -24,7 +24,7 @@ function InputLetterButton({ text, guessedLetters, onLetterClick }) {
             <button
                 key={letter}
                 value={letter}
-                className={`h-12 w-12 m-1 text-white rounded-md ${buttonStyle(letter)}`}
+                className={`h-12 w-10 m-1 text-white rounded-md ${buttonStyle(letter)}`}
                 disabled={guessedLettersSet.has(letter)}
                 onClick={handleClick}
             >
